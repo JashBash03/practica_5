@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica 5</title>
-    <script src="script.js"></script>
+    <script src="/scripts/emoji.js"></script>
+    <script src="/scripts/texto.js"></script>
+    <script src="/scripts/color.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>YEAH PERDONEN KAMEHAME HA DESPUES DEL TEMA DEL TETRIS VIENE EL DRAGON BALL RAP</h1>
+    <section id="random-emoji" class="flex-center">
+        <h2 id="emoji" onclick="randomEmoji()">🐺</h2>
+    </section>
+    <section id="texto-usuario" class="flex-center">
+        <h2 id="texto">Escribe dentro del input</h2>
+        <input id="input-text" type="text" oninput="textInput()" minlength="1">
+    </section>
+    <section id="color-selction" class="flex-center">
+        <h2>Color RGB</h2>
+        <div class="quarterwidth flex-center">
+            <div id="color-output"></div>
+            <input type="range" min="0" max="255" id="R-input" class="color-input" oninput="newColor()">
+            <input type="range" min="0" max="255" id="G-input" class="color-input" oninput="newColor()">
+            <input type="range" min="0" max="255" id="B-input" class="color-input" oninput="newColor()">
+        </div>
+    </section>
 </body>
 </html>
