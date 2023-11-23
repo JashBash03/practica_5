@@ -7,6 +7,7 @@
     <script src="/scripts/emoji.js"></script>
     <script src="/scripts/texto.js"></script>
     <script src="/scripts/color.js"></script>
+    <script src="/scripts/gradient.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,6 +25,27 @@
             <input type="range" min="0" max="255" id="R-input" class="color-input" oninput="newColor()">
             <input type="range" min="0" max="255" id="G-input" class="color-input" oninput="newColor()">
             <input type="range" min="0" max="255" id="B-input" class="color-input" oninput="newColor()">
+        </div>
+    </section>
+    <section id="gradient" class="flex-center">
+        <h2>Color 1</h2>
+        <div class="quarterwidth flex-center">
+            <div id="color-1"></div>
+            <input type="range" min="0" max="255" id="R0-input" class="color-input" oninput="newGradient()">
+            <input type="range" min="0" max="255" id="G0-input" class="color-input" oninput="newGradient()">
+            <input type="range" min="0" max="255" id="B0-input" class="color-input" oninput="newGradient()">
+        </div>
+        <h2>Color 2</h2>
+        <div class="quarterwidth flex-center">
+            <div id="color-2"></div>
+            <input type="range" min="0" max="255" id="R1-input" class="color-input" oninput="newGradient()">
+            <input type="range" min="0" max="255" id="G1-input" class="color-input" oninput="newGradient()">
+            <input type="range" min="0" max="255" id="B1-input" class="color-input" oninput="newGradient()">
+        </div>
+        <h2>Grados</h2>
+            <div class="quarterwidth flex-center">
+            <div id="degrees-container"></div>
+            <input type="range" min="0" max="360" id="degrees" class="color-input" oninput="newGradient()">
         </div>
     </section>
 </body>

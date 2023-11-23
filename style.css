@@ -95,3 +95,7 @@ section{
 .color-input{
     width: 100%;
 }
+
+#gradient{
+    background: white;
+}
