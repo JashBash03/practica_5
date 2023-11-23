@@ -8,5 +8,5 @@ function newGradient(){
     const deg = document.querySelector("#degrees").value
 
     const section = document.querySelector("#gradient")
-    section.style.background= `linear-gradient(90deg, rgb(${R0}, ${G0}, ${B0}), rgb(${R1}, ${G1}, ${B1}))`
+    section.style.background= `linear-gradient(${deg}deg, rgb(${R0}, ${G0}, ${B0}), rgb(${R1}, ${G1}, ${B1}))`
 }
